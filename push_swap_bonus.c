@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 15:28:21 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 17:29:13 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/10 19:36:21 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,8 @@ int	main(int ac, char *av[])
 {
 	t_data	data;
 
-	mem_free(data.input);
+	if (ac == 1)
+		return (0);
 	data.stack_a = NULL;
 	data.input = get_stack(av);
 	check_input(&data);
