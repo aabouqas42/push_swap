@@ -6,11 +6,11 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 15:28:21 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 19:48:28 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/10 22:03:16 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap_bonus/push_swap_bonus.h"
+#include "push_swap_mandatory/push_swap.h"
 
 int	main(int ac, char *av[])
 {
@@ -29,5 +29,5 @@ int	main(int ac, char *av[])
 	is_sorted(&data);
 	sort_all(&data);
 	free_stack(data.stack_a);
-	mem_free(data.input);
+	free_tab(data.input);
 }

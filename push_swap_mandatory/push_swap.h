@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 15:25:58 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 17:25:04 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/10 21:42:18 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ t_stack	*creat_new_node(int number);
 void	add_back(t_stack **head, t_stack *new_node);
 void	add_front(t_stack **head, t_stack *new_node);
 void	show_msg(t_data *data, char *msg, int ret);
-void	mem_free(char **input);
+void	free_tab(char **input);
 char	**get_stack(char **inputs);
 void	init_stack(t_data *data);
 void	free_stack(t_stack *stack);

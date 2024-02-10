@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 02:32:37 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/09 18:14:32 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/10 21:42:14 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	show_msg(t_data *data, char *msg, int ret)
 {
 	ft_putstr_fd(msg, 2);
-	mem_free(data->input);
+	free_tab(data->input);
 	free_stack(data->stack_a);
 	exit(ret);
 }

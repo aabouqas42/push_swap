@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 15:28:21 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 19:36:21 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/10 21:41:58 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,5 +97,5 @@ int	main(int ac, char *av[])
 	else
 		(ft_putstr_fd("KO\n", 2), free_stack(data.stack_b));
 	free_stack(data.stack_a);
-	mem_free(data.input);
+	free_tab(data.input);
 }

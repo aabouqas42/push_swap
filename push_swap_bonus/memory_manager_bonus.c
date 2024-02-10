@@ -6,13 +6,13 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 22:46:16 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 14:14:45 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/10 21:40:50 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap_bonus.h"
 
-void	mem_free(char **input)
+void	free_tab(char **input)
 {
 	int	i;
 

@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 18:35:11 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 17:26:19 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/10 21:44:33 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,4 +60,20 @@ t_stack	*get_max(t_stack *stack)
 		stack = stack->next;
 	}
 	return (max);
+}
+int	get_position(t_stack *stack, int number)
+{
+	t_stack	*node;
+	int		pos;
+
+	node = stack;
+	pos = 1;
+	while (node)
+	{
+		if (node->number == number)
+			return (pos);
+		node = node->next;
+		pos++;
+	}
+	return (0);
 }

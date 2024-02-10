@@ -6,7 +6,7 @@
 #    By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/24 01:53:50 by aabouqas          #+#    #+#              #
-#    Updated: 2024/02/10 17:19:23 by aabouqas         ###   ########.fr        #
+#    Updated: 2024/02/10 21:52:39 by aabouqas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,13 +70,10 @@ PRINTF_SRC =	ft_printf/print_number_printf.c\
 				ft_printf/unsigned_printf.c
 
 BONUS_SRC =	push_swap_bonus/input_checker_bonus.c\
-			push_swap_bonus/get_data_bonus.c\
 			push_swap_bonus/memory_manager_bonus.c\
 			push_swap_bonus/push_swap_utils_bonus.c\
-			push_swap_bonus/sorter_bonus.c\
 			push_swap_bonus/stack_manager_bonus.c\
 			push_swap_bonus/stack_utils_bonus.c\
-			push_swap_bonus/to_b_to_a_bonus.c\
 			push_swap_bonus/instractions/part1_bonus.c\
 			push_swap_bonus/instractions/part2_bonus.c\
 			push_swap_bonus/instractions/part3_bonus.c\
