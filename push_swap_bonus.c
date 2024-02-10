@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 15:28:21 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 14:29:16 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/10 17:03:22 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,11 +74,6 @@ void	_checker(t_data *data)
 		}
 		action = get_next_line(STDIN_FILENO);
 	}
-}
-
-void lks()
-{
-	system("leaks checker");
 }
 
 int	main(int ac, char *av[])
