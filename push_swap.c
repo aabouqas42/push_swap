@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 15:28:21 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 14:31:24 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/10 17:24:47 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int	main(int ac, char *av[])
 {
 	t_data	data;
-	size_t	i;
 
 	data.stack_a = NULL;
 	data.input = get_stack(av);

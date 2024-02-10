@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 15:25:58 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 13:53:29 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/10 17:27:32 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void	_rr_(t_data *data);
 void	_rra_(t_data *data);
 void	_rrb_(t_data *data);
 void	_rrr_(t_data *data);
-size_t	stack_len(t_stack *stack);
+int		stack_len(t_stack *stack);
 t_stack	*get_min(t_stack *stack);
 t_stack	*get_max(t_stack *stack);
 void	sort_3(t_data *data);

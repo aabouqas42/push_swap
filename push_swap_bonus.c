@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 15:28:21 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 17:03:22 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/10 17:29:13 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 int	check_cmds(char *action)
 {
-	return (ft_strncmp(action, "sa", 2) == 0 && ft_strlen(action) == 3
-		|| ft_strncmp(action, "sb", 2) == 0 && ft_strlen(action) == 3
-		|| ft_strncmp(action, "ss", 2) == 0 && ft_strlen(action) == 3
-		|| ft_strncmp(action, "pa", 2) == 0 && ft_strlen(action) == 3
-		|| ft_strncmp(action, "pb", 2) == 0 && ft_strlen(action) == 3
-		|| ft_strncmp(action, "ra", 2) == 0 && ft_strlen(action) == 3
-		|| ft_strncmp(action, "rb", 2) == 0 && ft_strlen(action) == 3
-		|| ft_strncmp(action, "rr", 2) == 0 && ft_strlen(action) == 3
-		|| ft_strncmp(action, "rra", 3) == 0 && ft_strlen(action) == 4
-		|| ft_strncmp(action, "rrb", 3) == 0 && ft_strlen(action) == 4
-		|| ft_strncmp(action, "rrr", 3) == 0 && ft_strlen(action) == 4
+	return ((ft_strncmp(action, "sa", 2) == 0 && ft_strlen(action) == 3)
+		|| (ft_strncmp(action, "sb", 2) == 0 && ft_strlen(action) == 3)
+		|| (ft_strncmp(action, "ss", 2) == 0 && ft_strlen(action) == 3)
+		|| (ft_strncmp(action, "pa", 2) == 0 && ft_strlen(action) == 3)
+		|| (ft_strncmp(action, "pb", 2) == 0 && ft_strlen(action) == 3)
+		|| (ft_strncmp(action, "ra", 2) == 0 && ft_strlen(action) == 3)
+		|| (ft_strncmp(action, "rb", 2) == 0 && ft_strlen(action) == 3)
+		|| (ft_strncmp(action, "rr", 2) == 0 && ft_strlen(action) == 3)
+		|| (ft_strncmp(action, "rra", 3) == 0 && ft_strlen(action) == 4)
+		|| (ft_strncmp(action, "rrb", 3) == 0 && ft_strlen(action) == 4)
+		|| (ft_strncmp(action, "rrr", 3) == 0 && ft_strlen(action) == 4)
 	);
 }
 

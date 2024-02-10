@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 03:15:30 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 16:42:33 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/10 17:27:39 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	to_a(t_data *data)
 {
 	int	pos;
-	int	max;
+	int		max;
 
 	while (data->stack_b)
 	{

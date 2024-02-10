@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 22:57:07 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/09 22:02:25 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/10 17:27:58 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ void	check_input(t_data *data)
 void	is_sorted(t_data *data)
 {
 	char	**input;
-	int		num;
 	int		check;
 	int		i;
 

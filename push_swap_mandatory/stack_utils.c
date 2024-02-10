@@ -6,15 +6,15 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 18:35:11 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/08 15:56:07 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/10 17:26:38 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-size_t	stack_len(t_stack *stack)
+int	stack_len(t_stack *stack)
 {
-	size_t	size;
+	int	size;
 
 	size = 0;
 	if (stack == NULL)
