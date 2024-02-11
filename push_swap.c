@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 15:28:21 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 22:03:16 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/11 11:17:48 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int	main(int ac, char *av[])
 		show_msg(&data, "", 0);
 	is_sorted(&data);
 	sort_all(&data);
+
 	free_stack(data.stack_a);
 	free_tab(data.input);
 }

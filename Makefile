@@ -6,7 +6,7 @@
 #    By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/24 01:53:50 by aabouqas          #+#    #+#              #
-#    Updated: 2024/02/10 21:52:39 by aabouqas         ###   ########.fr        #
+#    Updated: 2024/02/11 11:23:51 by aabouqas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -122,6 +122,8 @@ $(LIBFT): libft/libft.h $(LIBFT_SRC)
 	
 $(PRINTF): ft_printf/ft_printf.h $(PRINTF_SRC)
 	make -C ft_printf
+
+re: fclean all
 
 fclean: clean
 	rm -rf $(LIBFT)
