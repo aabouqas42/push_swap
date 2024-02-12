@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 12:04:46 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/12 17:36:46 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/12 22:09:31 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static char	*get_instracions_str(t_data *data)
 			if (temp == NULL)
 				(free (str), free (action), show_msg(data, "Error\n", -1));
 			free (str);
-			str = ft_strjoin(temp, "");
+			str = ft_strjoin(temp, "\n");
 			if (str == NULL)
 				(free (temp), free (action), show_msg(data, "Error\n", -1));
 			(free (temp), free(action));
