@@ -6,12 +6,12 @@
 #    By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/24 01:53:50 by aabouqas          #+#    #+#              #
-#    Updated: 2024/02/12 14:13:23 by aabouqas         ###   ########.fr        #
+#    Updated: 2024/02/12 15:56:32 by aabouqas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
-CFLAGS = -Wextra -Werror -Wall -fsanitize=address
+CFLAGS = -Wextra -Werror -Wall
 
 SRC =	push_swap_mandatory/stack_manager.c\
 		push_swap_mandatory/push_swap_utils.c\

@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 15:25:58 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/12 13:36:45 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/12 16:05:24 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,6 @@ int		stack_len(t_stack *stack);
 t_stack	*get_min(t_stack *stack);
 t_stack	*get_max(t_stack *stack);
 int		get_index(t_stack *stack, int number);
-void	execute_instructions(t_data *data, char *instracions);
-char	*get_instracions_str(t_data *data);
+void	execute_instructions(t_data *data);
 
 #endif

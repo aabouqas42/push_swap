@@ -6,13 +6,13 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 12:04:46 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/12 14:18:36 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/12 17:36:46 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap_bonus.h"
 
-int	check_cmds(char *action)
+static int	check_cmds(char *action)
 {
 	return ((ft_strncmp(action, "sa", 2) == 0 && ft_strlen(action) == 3)
 		|| (ft_strncmp(action, "sb", 2) == 0 && ft_strlen(action) == 3)
@@ -28,7 +28,7 @@ int	check_cmds(char *action)
 	);
 }
 
-char	*get_instracions_str(t_data *data)
+static char	*get_instracions_str(t_data *data)
 {
 	char	*action;
 	char	*temp;
@@ -57,15 +57,7 @@ char	*get_instracions_str(t_data *data)
 	return (str);
 }
 
-char	**get_instractions_array(char *ins)
-{
-	char	**instructions;
-
-	instructions = ft_split(ins, '\n');
-	return (instructions);
-}
-
-void	execute_actions(t_data *data, char *action)
+static void	execute_actions(t_data *data, char *action)
 {
 	if (ft_strncmp(action, "sa", 2) == 0)
 		_sa_(data);
@@ -91,13 +83,19 @@ void	execute_actions(t_data *data, char *action)
 		_rrr_(data);
 }
 
-void	execute_instructions(t_data *data, char *actions)
+void	execute_instructions(t_data *data)
 {
 	char	**instructions;
+	char	*actions;
 	int		i;
 
-	instructions = get_instractions_array(actions);
+	actions = get_instracions_str(data);
+	if (actions == NULL)
+		return ;
+	instructions = ft_split(actions, '\n');
 	free (actions);
+	if (instructions == NULL)
+		return ;
 	i = 0;
 	while (instructions[i])
 	{

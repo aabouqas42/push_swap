@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 11:28:41 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/09 22:53:54 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/12 16:05:05 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ char	*app_end(char *str1, char *str2)
 	int		len;
 	int		i;
 
-	if (!str1 && !str2)
+	if (str1 == NULL && str2 == NULL)
 		return (NULL);
 	len = string_len(str1) + string_len(str2);
 	str = malloc (len + 1);
-	if (!str)
+	if (str == NULL)
 		return (free (str1), NULL);
 	i = 0;
 	if (str1)
