@@ -29,4 +29,4 @@ fclean : clean
 clean :
 	rm -rf $(OBJ)
 
-.PHONY : all clean fclean re
+.PHONY : clean

@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 15:25:58 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 21:41:39 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/12 13:36:45 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
 typedef struct s_stack
 {
 	int				number;
-	int				index;
 	struct s_stack	*next;
 }	t_stack;
 
@@ -44,6 +43,7 @@ char	**get_stack(char **inputs);
 void	init_stack(t_data *data);
 void	check_input(t_data *data);
 void	is_sorted(t_data *data);
+void	is_empty(char **argv);
 int		_atoi(t_data *data, const char *str);
 int		sorted(t_stack *data);
 int		get_position(t_stack *stack, int number);
@@ -62,5 +62,7 @@ int		stack_len(t_stack *stack);
 t_stack	*get_min(t_stack *stack);
 t_stack	*get_max(t_stack *stack);
 int		get_index(t_stack *stack, int number);
+void	execute_instructions(t_data *data, char *instracions);
+char	*get_instracions_str(t_data *data);
 
 #endif

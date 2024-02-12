@@ -6,12 +6,12 @@
 #    By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/24 01:53:50 by aabouqas          #+#    #+#              #
-#    Updated: 2024/02/11 11:23:51 by aabouqas         ###   ########.fr        #
+#    Updated: 2024/02/12 14:13:23 by aabouqas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
-CFLAGS = -Wextra -Werror -Wall
+CFLAGS = -Wextra -Werror -Wall -fsanitize=address
 
 SRC =	push_swap_mandatory/stack_manager.c\
 		push_swap_mandatory/push_swap_utils.c\
@@ -74,6 +74,7 @@ BONUS_SRC =	push_swap_bonus/input_checker_bonus.c\
 			push_swap_bonus/push_swap_utils_bonus.c\
 			push_swap_bonus/stack_manager_bonus.c\
 			push_swap_bonus/stack_utils_bonus.c\
+			push_swap_bonus/instructions_manager_bonus.c\
 			push_swap_bonus/instractions/part1_bonus.c\
 			push_swap_bonus/instractions/part2_bonus.c\
 			push_swap_bonus/instractions/part3_bonus.c\

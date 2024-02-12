@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/28 21:19:35 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/11 11:22:32 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/12 09:49:55 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	_sb_(t_data *data)
 void	_ss_(t_data *data)
 {
 	t_stack	*temp;
-	
+
 	if (stack_len(data->stack_a) < 2 || stack_len(data->stack_b) < 2)
 		return ;
 	temp = data->stack_a->next;

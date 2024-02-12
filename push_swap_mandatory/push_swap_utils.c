@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 02:32:37 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 21:42:14 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/12 11:13:14 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	**get_stack(char **inputs)
 	{
 		temp = ft_strjoin(str, inputs[i]);
 		if (temp == NULL)
-			(free(str), ft_putstr_fd("Error\n", 2), exit(-1));
+			(free (str), ft_putstr_fd("Error\n", 2), exit(-1));
 		free (str);
 		str = ft_strjoin(temp, " ");
 		if (str == NULL)

@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 15:25:58 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 21:42:18 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/12 11:14:32 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ char	**get_stack(char **inputs);
 void	init_stack(t_data *data);
 void	free_stack(t_stack *stack);
 void	check_input(t_data *data);
+void	is_empty(char **argv);
 void	is_sorted(t_data *data);
 int		_atoi(t_data *data, const char *str);
 int		sorted(t_stack *data);

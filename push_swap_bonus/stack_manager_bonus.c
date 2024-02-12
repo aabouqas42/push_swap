@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 04:44:48 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 21:54:18 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/12 13:35:54 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,15 +59,15 @@ void	add_front(t_stack **head, t_stack *new_node)
 	(*head) = new_node;
 }
 
-int	sorted(t_stack *data)
+int	sorted(t_stack *stack)
 {
-	if (data == NULL)
+	if (stack == NULL)
 		return (0);
-	while (data->next)
+	while (stack->next)
 	{
-		if (data->number > data->next->number)
+		if (stack->number > stack->next->number)
 			return (0);
-		data = data->next;
+		stack = stack->next;
 	}
 	return (1);
 }

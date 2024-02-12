@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 02:32:37 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/10 21:42:05 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/12 13:36:32 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,22 +47,6 @@ char	**get_stack(char **inputs)
 	return (free (str), input);
 }
 
-int	get_index(t_stack *list, int number)
-{
-	t_stack	*node;
-	int		index;
-
-	node = list;
-	index = 0;
-	while (node)
-	{
-		if (node->number < number)
-			index++;
-		node = node->next;
-	}
-	return (index);
-}
-
 void	init_stack(t_data *data)
 {
 	t_stack	*node;
@@ -77,12 +61,6 @@ void	init_stack(t_data *data)
 			show_msg(data, "Error\n", -1);
 		add_back(&data->stack_a, node);
 		i++;
-	}
-	node = data->stack_a;
-	while (node)
-	{
-		node->index = get_index(data->stack_a, node->number);
-		node = node->next;
 	}
 }
 
