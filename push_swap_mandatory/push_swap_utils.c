@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 02:32:37 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/12 11:13:14 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/12 18:58:15 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,10 @@ char	**get_stack(char **inputs)
 		i++;
 	}
 	input = ft_split(str, ' ');
+	free(str);
 	if (input == NULL)
-		(free(str), ft_putstr_fd("Error\n", 2), exit(-1));
-	return (free (str), input);
+		(ft_putstr_fd("Error\n", 2), exit(-1));
+	return (input);
 }
 
 int	get_index(t_stack *list, int number)

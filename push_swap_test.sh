@@ -4102,7 +4102,7 @@ echo All size test >> traces.txt
 
 printf "\n${WHITE}⚠️ This test is very long. It is recommended to use it only when the project is finished or in an evaluation ⚠️${DEF_COLOR}\n\n\n";
 
-sleep 1
+sleep 0.1
 
 res_1=0
 res_2=0
