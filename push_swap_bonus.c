@@ -6,16 +6,11 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 15:28:21 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/12 15:56:39 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/13 10:38:25 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap_bonus/push_swap_bonus.h"
-
-void leak_checker()
-{
-	system("leaks checker");
-}
 
 int	main(int ac, char *av[])
 {
@@ -23,7 +18,6 @@ int	main(int ac, char *av[])
 
 	if (ac == 1)
 		return (0);
-	atexit(leak_checker);
 	is_empty(av);
 	data.stack_a = NULL;
 	data.stack_b = NULL;

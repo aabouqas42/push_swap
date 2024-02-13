@@ -6,7 +6,7 @@
 /*   By: aabouqas <aabouqas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 12:04:46 by aabouqas          #+#    #+#             */
-/*   Updated: 2024/02/12 22:09:31 by aabouqas         ###   ########.fr       */
+/*   Updated: 2024/02/13 10:14:27 by aabouqas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,27 +59,27 @@ static char	*get_instracions_str(t_data *data)
 
 static void	execute_actions(t_data *data, char *action)
 {
-	if (ft_strncmp(action, "sa", 2) == 0)
+	if (ft_strncmp(action, "sa", 2) == 0 && ft_strlen(action) == 2)
 		_sa_(data);
-	if (ft_strncmp(action, "sb", 2) == 0)
+	else if (ft_strncmp(action, "sb", 2) == 0 && ft_strlen(action) == 2)
 		_sb_(data);
-	if (ft_strncmp(action, "ss", 2) == 0)
+	else if (ft_strncmp(action, "ss", 2) == 0 && ft_strlen(action) == 2)
 		_ss_(data);
-	if (ft_strncmp(action, "pa", 2) == 0)
+	else if (ft_strncmp(action, "pa", 2) == 0 && ft_strlen(action) == 2)
 		_pa_(data);
-	if (ft_strncmp(action, "pb", 2) == 0)
+	else if (ft_strncmp(action, "pb", 2) == 0 && ft_strlen(action) == 2)
 		_pb_(data);
-	if (ft_strncmp(action, "ra", 2) == 0)
+	else if (ft_strncmp(action, "ra", 2) == 0 && ft_strlen(action) == 2)
 		_ra_(data);
-	if (ft_strncmp(action, "rb", 2) == 0)
+	else if (ft_strncmp(action, "rb", 2) == 0 && ft_strlen(action) == 2)
 		_rb_(data);
-	if (ft_strncmp(action, "rr", 2) == 0)
+	else if (ft_strncmp(action, "rr", 2) == 0 && ft_strlen(action) == 2)
 		_rr_(data);
-	if (ft_strncmp(action, "rra", 3) == 0)
+	else if (ft_strncmp(action, "rra", 3) == 0 && ft_strlen(action) == 3)
 		_rra_(data);
-	if (ft_strncmp(action, "rrb", 3) == 0)
+	else if (ft_strncmp(action, "rrb", 3) == 0 && ft_strlen(action) == 3)
 		_rrb_(data);
-	if (ft_strncmp(action, "rrr", 3) == 0)
+	else if (ft_strncmp(action, "rrr", 3) == 0 && ft_strlen(action) == 3)
 		_rrr_(data);
 }
 
